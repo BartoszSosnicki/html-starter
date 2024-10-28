@@ -1,20 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script defer src="/_vercel/insights/script.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css"
-    />
+
     <title>Vercel HTML Starter</title>
     <meta
       name="description"
       content="High-performance HTML based website template."
     />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      main {
+        padding: 10px;
+        background-color: black;
+        height: 100vh;
+      }
+      section.hero {
+        padding-top: 10vh;
+        color: white;
+        font-family: "Poppins", sans-serif;
+        font-weight: lighter;
+        text-align: center;
+      }
+
+      .gradient {
+        background: linear-gradient(239deg, #46be1f, #d83ba4, #e51b1b, #004dff);
+    background-size: 400% 400%;
+
+    -webkit-animation: AnimationName 15s ease infinite;
+    -moz-animation: AnimationName 15s ease infinite;
+    animation: AnimationName 15s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 14%}
+    50%{background-position:100% 87%}
+    100%{background-position:0% 14%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 14%}
+    50%{background-position:100% 87%}
+    100%{background-position:0% 14%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 14%}
+    50%{background-position:100% 87%}
+    100%{background-position:0% 14%}
+}
+
+section.hero h1 {
+  margin: 0;
+  font-size: xx-large;
+  font-weight: 100;
+  font-style: normal;
+}
+section.hero span {
+  font-weight: 300;
+  font-size: smaller;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+section.hero img {
+  margin: 10px;
+  width: 70vh;
+  border: 2px solid white;
+  border-radius: 20px;
+  box-shadow:-webkit-box-shadow:-70px 14px 100px 27px rgba(0, 31, 255, 1);
+-moz-box-shadow:-70px 14px 100px 27px rgba(0, 31, 255, 1);
+box-shadow:-70px 14px 100px 27px rgba(0, 31, 255, 1);
+}
+
+    </style>
   </head>
   <body>
-    
+    <main class="gradient">
+      <section class="hero">
+        <h1>Hotel Mariott</h1>
+        <span>Twoje miejsce na wypoczynek</span><br><br>
+        <img src="Najman-780x490.jpg" alt="Najmanek">
+      </section>
+    </main>
+
   </body>
 </html>
